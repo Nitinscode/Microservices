@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bet Master</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+ 
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="/css/adminstyle.css" rel="stylesheet">
+</head>
+
+<body class="skyexchange" onload="generate()">
+    <div id="loginForm" class="overlay">
+        <div class="index-div">
+            <div class="index-img">
+                <img src="/images/bg-login_wrap-skyEX.jpg">
+            </div>
+            <div class="index-form">
+                <h2>Agent login</h2>
+                <input type="text" placeholder="Username" id="username" onkeyup="checkUsername()">
+                <p class="text-danger fw-bold" id="usernamep"></p>
+                <input type="password" placeholder="Password" id="password" onkeyup="checkPassword()">
+                <p class="text-danger fw-bold" id="passwordp"></p>
+                <div class="captchasection">
+                    <input type="text" placeholder="Validation Code" id="captcha" onkeyup="checkCaptcha()">
+                    <div class="fw-bold h5 img-login" id="image" selectable="False"></div>
+                </div>
+                <p class="text-danger fw-bold" id="captchap"></p>
+                <button onClick="login()">Login<i class="fa fa-share-square" aria-hidden="true"
+                            style="padding-left: 4px;"></i></button>
+            </div>
+        </div>
+    </div>
+  <!-- form end  -->
+    <div id="supportWrap" class="support-wrap container">
+        <div class="support-service">
+            <a id="support_email" href="#" class="support-mail open supmail"><img src="/images/transparent.gif"
+                    title="Email"></a>
+            <a id="support_whatsapp" href="#" class="support-whatsapp subweb"><img src="/images/transparent.gif"
+                    title="WhatsApp"></a>
+            <a id="support_telegram" href="#" class="support-telegram subinfo"><img src="/images/transparent.gif"
+                    title="Telegram"></a>
+            <a id="support_skype" href="#" class="support-skype subskype"><img src="/images/transparent.gif"
+                    title="Skype"></a>
+            <a id="support_instagram" href="#" class="support-ig subinsta"><img src="/images/transparent.gif"
+                    title="Instagram"></a>
+        </div>
+        <div class="support-info">
+            <div id="supportDetail_email" class="support-detail supmail open"><a
+                    href="mailto:info@skyexchange.com">info@skyexchange.com</a></div>
+            <div id="supportDetail_whatsapp" class="support-detail subweb">
+                <a href="">+351913343771 </a>
+                <a href="">+351912085916</a>
+            </div>
+            <div id="supportDetail_telegram" class="support-detail subinfo">
+                <a href="">www.t.me/officialskyexchangeinfo</a>
+                <a href="">www.t.me/skyexchangecustomersupport</a>
+            </div>
+            <div id="supportDetail_skype" class="support-detail subskype">
+                <a href="">skyexchangeofficial</a>
+            </div>
+            <div id="supportDetail_instagram" class="support-detail subinsta">
+                <a href="" class="ui-link" target="_blank">officialskyexchange</a>
+            </div>
+        </div>
+    </div>
+    <div class="power-wrap">
+        <h3 id="powerWrapW">
+            <span>Powered by</span>
+            <img src="/images/betfair.png">
+        </h3>
+        <div class="vl"></div>
+        <div class="licence_embed">
+            <img src="/images/gc-logo.png" width="150" height="50" style="border:none;">
+        </div>
+        <p><a href="http://www.gaming-curacao.com/validation/sky-infotech-limited/" target="_blank">Sky Infotech
+                Limited</a> is licensed and regulated by Government of Curacao under license no 365/JAZ Sub-License
+            GLH-OCCHKTW0707072017.</p>
+    </div>
+    <div class="browser-wrap container">
+        <img src="/images/website.png">
+        <img src="/images/world.png" class="world-img">
+        <p>Our website works best in the newest and last prior version of these browsers: <br>Google Chrome. Firefox</p>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="/js/adminmain.js"></script>
+
+</html>

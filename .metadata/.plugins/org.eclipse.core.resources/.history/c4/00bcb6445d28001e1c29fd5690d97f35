@@ -1,0 +1,12 @@
+package com.example.service;
+import java.util.List;
+
+import com.example.entity.EXUser;
+
+public interface EXUserService {
+ static List<EXUser> getDownlineList(String parentId, String userType) {
+	// TODO Auto-generated method stub
+	return null;
+}
+}
+

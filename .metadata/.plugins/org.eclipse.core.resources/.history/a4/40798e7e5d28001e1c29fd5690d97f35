@@ -1,0 +1,23 @@
+package com.example.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.entity.EXUser;
+import com.example.repository.EXUserRepository;
+
+@Service
+public class ExUserServiceImpl implements EXUserService {
+
+ @Autowired
+ private EXUserRepository userRepository;
+
+	/*
+	 * @Override public List<EXUser> getDownlineList(String parentId, String
+	 * userType) { return userRepository.findByParentIdAndUserType(parentId,
+	 * userType); }
+	 */
+}
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\hp\Desktop\Microservices\UserService"/>
+			<item value="C:\Users\hp\Downloads\test"/>
+			<item value="C:\Users\hp\Desktop\Microservices\Frontend"/>
+			<item value="C:\Users\hp\Desktop\Microservices\UserService-main"/>
+			<item value="C:\Users\hp\Desktop\Microservices\ServiceRegistery-main"/>
+			<item value="C:\Users\hp\Desktop\Microservices\FrontEnd-main"/>
+			<item value="C:\Users\hp\Desktop\Microservices\EncryptionDecryption-main"/>
+			<item value="C:\Users\hp\Desktop\Microservices\ApiGateway-main"/>
+			<item value="C:\Users\hp\Desktop\Microservices\AdminService-main"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bet Master</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+ 
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <link href="/css/adminstyle.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #f0ece1;">
+    <div th:replace="/header"> </div>
+    <div class="full-wrap" style="height: calc(100% - 105px)">
+        <!-- Center Column -->
+        <div class="over-wrap">
+            <!-- Loading Wrap -->
+            <h2>Bet List</h2>
+            <ul class="input-list">
+                <li id="eventRadioBtnList">
+                    <input type="radio" name="events" id="events_1" data-eventtype="1" value="1">
+                    Soccer
+                    <input type="radio" name="SOCCER_sportsbook" id="SOCCER_sportsbook" data-eventtype="1" value="true">
+                    S/R Soccer
+                    <input type="radio" name="SOCCER_ow" id="SOCCER_ow" data-eventtype="1" value="true">
+                    S/B Soccer
+                    <input type="radio" name="SOCCER_BOOK" id="SOCCER_BOOK" data-eventtype="1" data-categorytype="5">
+                    BOOK Soccer
+                    <input type="radio" name="events" id="events_2" data-eventtype="2" value="2">
+                    Tennis
+                    <input type="radio" name="TENNIS_sportsbook" id="TENNIS_sportsbook" data-eventtype="2" value="true">
+                    S/R Tennis
+                    <input type="radio" name="TENNIS_BOOK" id="TENNIS_BOOK" data-eventtype="2" data-categorytype="5">
+                    BOOK Tennis
+                    <input type="radio" name="events" id="events_4" data-eventtype="4" value="4">
+                    Cricket
+                    <input type="radio" name="CRICKET_fancy" id="CRICKET_fancy" data-eventtype="4" data-categorytype="2"
+                        value="true">
+                    Cricket/Fancy Bet
+                    <input type="radio" name="CRICKET_sportsbook" id="CRICKET_sportsbook" data-eventtype="4"
+                        value="true">
+                    S/R Cricket
+                    <input type="radio" name="CRICKET_BOOK" id="CRICKET_BOOK" data-eventtype="4" data-categorytype="5">
+                    BOOK Cricket
+                    <input type="radio" name="ELECTION_fancy" id="ELECTION_fancy" data-eventtype="2378962"
+                        data-categorytype="2" value="true">
+                    Election/Fancy Bet
+                    <input type="radio" name="FANCYBET_fancy" id="FANCYBET_fancy" data-eventtype="9999999"
+                        data-categorytype="2" value="9999999">
+                    FancyBet
+                    <input type="radio" id="TS_BINARY" data-categorytype="6">BINARY
+                </li>
+            </ul>
+            <!-- function -->
+            <div class="function-wrap">
+                <ul class="input-list">
+                    <div id="statusCondition" class="d-flex">
+                        <li><label>Bet Status:</label></li>
+                        <li>
+                            <select name="betStatus" id="betStatus">
+                                <option value="0">Unmatched</option>
+                                <option value="1">Matched</option>
+                                <option value="2">Settled</option>
+                                <option value="3">Cancelled</option>
+                                <option value="4">Voided</option>
+                            </select>
+                        </li>
+                    </div>
+
+                    <li><label>Period</label></li>
+                    <li>
+                        <input id="startDate" class="cal-input" type="date" placeholder="YYYY-MM-DD">
+                        <input id="startTime" class="time-input " type="text" placeholder="09:00" maxlength="5">
+                        to
+                        <input id="endDate" class="cal-input" type="date" placeholder="YYYY-MM-DD">
+                        <input id="endTime" class="time-input " type="text" placeholder="08:59" maxlength="5">
+                    </li>
+                </ul>
+                <ul class="input-list">
+                    <li><a id="today" href="#" class="btn">Just For Today</a></li>
+                    <li><a id="yesterday" href="#" class="btn">From Yesterday</a></li>
+                    <li><a id="getPL" href="#" class="btn-send">Get History</a></li>
+                </ul>
+            </div>
+            <!-- No Report Message -->
+            <div id="noReportMessage">
+                <p>Bet List enables you to review the bets you have placed. <br>Specify the time period during which
+                    your bets were placed, the type of markets on which the bets were placed, and the sport.</p>
+                <p>Bet List is available online for the past 30 days.</p>
+            </div>
+            <!-- function end-->
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+
+</html>
