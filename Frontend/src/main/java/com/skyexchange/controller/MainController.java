@@ -61,6 +61,12 @@ public class MainController {
 		return "account-statement";
 	}
 
+	@RequestMapping("/nitin")
+	public String nitin() { 
+		return "nitin";
+	}
+
+
 }
 
 
